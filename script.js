@@ -1,4 +1,4 @@
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://YOUR-RENDER-URL.onrender.com";
 
 const output = document.getElementById("output");
 const messageBox = document.getElementById("message");
@@ -116,4 +116,4 @@ async function evaluate() {
     output.innerHTML += `
         <div class="user">${answer}</div>
     `;
-    
+
