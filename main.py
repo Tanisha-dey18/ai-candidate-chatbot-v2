@@ -21,6 +21,9 @@ app = FastAPI(
     title="AI Interview Assistant",
     version="1.0"
 )
+@app.get("/")
+def read_root():
+    return {"message": "AI Interview Assistant API is running!"}
 
 # -----------------------------
 # CORS
