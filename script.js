@@ -109,4 +109,11 @@ async function technicalQuestions() {
 
 async function evaluate() {
 
-    const answer =
+    const answer = messageBox.value.trim();
+
+    if (answer === "") return;
+
+    output.innerHTML += `
+        <div class="user">${answer}</div>
+    `;
+    
