@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Interview Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="sidebar">
+
+        <h2>🤖 AI Assistant</h2>
+
+        <button onclick="chat()">💬 Chat</button>
+
+        <button onclick="hrQuestions()">👨‍💼 HR Questions</button>
+
+        <button onclick="technicalQuestions()">💻 Technical Questions</button>
+
+        <button onclick="evaluate()">⭐ Evaluate</button>
+
+        <button onclick="sendFeedback()">📝 Feedback</button>
+
+        <button onclick="clearChat()">🗑️ Clear Chat</button>
+
+    </div>
+
+    <div class="container">
+
+        <h1>AI Interview Assistant</h1>
+
+        <div id="output" class="chat-box">
+
+            <div class="bot">
+
+                👋 Welcome! Ask me any interview question.
+
+            </div>
+
+        </div>
+
+        <textarea
+            id="message"
+            placeholder="Type your interview question..."></textarea>
+
+        <button class="send-btn" onclick="chat()">
+
+            Send
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
